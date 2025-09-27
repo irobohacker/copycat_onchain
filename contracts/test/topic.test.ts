@@ -20,7 +20,6 @@
 
 import { ethers, upgrades } from "hardhat";
 import { expect } from "chai";
-import { describe, it } from "mocha";
 import { Contract } from "ethers";
 
 describe("Topic", function () {
@@ -36,15 +35,15 @@ describe("Topic", function () {
   });
 
   it("should return the correct topicId", async function () {
-    expect(await (Topic as unknown as TopicContract).getTopicId()).to.equal("0.0.1337");
+    expect(await Topic.getTopicId()).to.equal("0.0.1337");
   });
 
   it("should return the correct topicId for version 2", async function () {
-    expect(await (TopicV2 as unknown as TopicContract).getTopicId()).to.equal("0.0.1337");
+    expect(await TopicV2.getTopicId()).to.equal("0.0.1337");
   });
 
   it("should set and return the correct message for version 2", async function () {
-    await (TopicV2 as unknown as TopicContract).setMessage("HelloFuture");
-    expect(await (TopicV2 as unknown as TopicContract).getMessage()).to.equal("HelloFuture");
+    await TopicV2.setMessage("HelloFuture");
+    expect(await TopicV2.getMessage()).to.equal("HelloFuture");
   });
 });

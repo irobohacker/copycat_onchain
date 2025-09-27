@@ -39,7 +39,7 @@ const config: HardhatUserConfig = {
     local: {
       url: "http://127.0.0.1:7546",
       chainId: 298,
-      accounts: [process.env.ECDSA_PRIVATE_KEY_LOCAL || ''], // Private key generated from 'hedera start -d'
+      accounts: process.env.ECDSA_PRIVATE_KEY_LOCAL ? [process.env.ECDSA_PRIVATE_KEY_LOCAL] : ["0x7dc3d03de5b4b0c8b9c4c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6"], // Default dummy key for compilation
       gas: "auto",
       gasPrice: "auto",
       gasMultiplier: 3
@@ -47,7 +47,7 @@ const config: HardhatUserConfig = {
     testnet: {
       url: "https://testnet.hashio.io/api",
       chainId: 296,
-      accounts: [process.env.ECDSA_PRIVATE_KEY_TEST || ''], // Private key of your testnet account
+      accounts: process.env.ECDSA_PRIVATE_KEY_TEST ? [process.env.ECDSA_PRIVATE_KEY_TEST] : ["0x7dc3d03de5b4b0c8b9c4c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6"], // Default dummy key for compilation
       gas: "auto",
       gasPrice: "auto",
       gasMultiplier: 3
