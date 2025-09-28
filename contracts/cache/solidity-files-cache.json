@@ -802,6 +802,351 @@
       "artifacts": [
         "IERC20PermitUpgradeable"
       ]
+    },
+    "/Users/sushmitmacair/Projects/hackathons/ethglobal_delhi_25/contracts/contracts/COPYCATLottery.sol": {
+      "lastModificationDate": 1759016750924,
+      "contentHash": "88a4410b5f9e8bead65cdf014f6fe8f3",
+      "sourceName": "contracts/COPYCATLottery.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 13000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@pythnetwork/entropy-sdk-solidity/IEntropyV2.sol",
+        "@pythnetwork/entropy-sdk-solidity/IEntropyConsumer.sol",
+        "@pythnetwork/entropy-sdk-solidity/EntropyStructsV2.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "COPYCATLottery",
+        "LotteryErrors"
+      ]
+    },
+    "/Users/sushmitmacair/Projects/hackathons/ethglobal_delhi_25/contracts/node_modules/@pythnetwork/entropy-sdk-solidity/IEntropyConsumer.sol": {
+      "lastModificationDate": 1759018569285,
+      "contentHash": "204e26c16f0a9ae5f37e8181100c5c35",
+      "sourceName": "@pythnetwork/entropy-sdk-solidity/IEntropyConsumer.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 13000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IEntropyConsumer"
+      ]
+    },
+    "/Users/sushmitmacair/Projects/hackathons/ethglobal_delhi_25/contracts/node_modules/@pythnetwork/entropy-sdk-solidity/IEntropyV2.sol": {
+      "lastModificationDate": 1759018569285,
+      "contentHash": "d83b219936751bd2328b543c7d8b12e2",
+      "sourceName": "@pythnetwork/entropy-sdk-solidity/IEntropyV2.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 13000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./EntropyEvents.sol",
+        "./EntropyEventsV2.sol",
+        "./EntropyStructsV2.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IEntropyV2"
+      ]
+    },
+    "/Users/sushmitmacair/Projects/hackathons/ethglobal_delhi_25/contracts/node_modules/@pythnetwork/entropy-sdk-solidity/EntropyStructsV2.sol": {
+      "lastModificationDate": 1759018569285,
+      "contentHash": "80b4a67b52ff94312b225eb5581e15fb",
+      "sourceName": "@pythnetwork/entropy-sdk-solidity/EntropyStructsV2.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 13000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "EntropyStructsV2"
+      ]
+    },
+    "/Users/sushmitmacair/Projects/hackathons/ethglobal_delhi_25/contracts/node_modules/@pythnetwork/entropy-sdk-solidity/EntropyEvents.sol": {
+      "lastModificationDate": 1759018569284,
+      "contentHash": "37a174ee1ccf280ecc0d91670a81c54d",
+      "sourceName": "@pythnetwork/entropy-sdk-solidity/EntropyEvents.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 13000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./EntropyStructs.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "EntropyEvents"
+      ]
+    },
+    "/Users/sushmitmacair/Projects/hackathons/ethglobal_delhi_25/contracts/node_modules/@pythnetwork/entropy-sdk-solidity/EntropyEventsV2.sol": {
+      "lastModificationDate": 1759018569284,
+      "contentHash": "8857eb87a988a7db9e350b758dd4a147",
+      "sourceName": "@pythnetwork/entropy-sdk-solidity/EntropyEventsV2.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 13000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./EntropyStructs.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "EntropyEventsV2"
+      ]
+    },
+    "/Users/sushmitmacair/Projects/hackathons/ethglobal_delhi_25/contracts/node_modules/@pythnetwork/entropy-sdk-solidity/EntropyStructs.sol": {
+      "lastModificationDate": 1759018569285,
+      "contentHash": "ae0a65ed84e16364a7a4356173a238da",
+      "sourceName": "@pythnetwork/entropy-sdk-solidity/EntropyStructs.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 13000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "EntropyStructs"
+      ]
+    },
+    "/Users/sushmitmacair/Projects/hackathons/ethglobal_delhi_25/contracts/contracts/SwapLottery.sol": {
+      "lastModificationDate": 1759018709145,
+      "contentHash": "22d796b9ce8ed905e3dd4915cce113b8",
+      "sourceName": "contracts/SwapLottery.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 13000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@pythnetwork/entropy-sdk-solidity/IEntropyV2.sol",
+        "@pythnetwork/entropy-sdk-solidity/IEntropyConsumer.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SwapLottery",
+        "SwapLotteryErrors"
+      ]
+    },
+    "/Users/sushmitmacair/Projects/hackathons/ethglobal_delhi_25/contracts/contracts/ProfitableSaucerSwap.sol": {
+      "lastModificationDate": 1759018200704,
+      "contentHash": "33405a7bf29e00c2d1ba46cbbe5495c6",
+      "sourceName": "contracts/ProfitableSaucerSwap.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 13000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20",
+        "IQuoterV2",
+        "ISwapLottery",
+        "ISwapRouter",
+        "ProfitableSaucerSwap"
+      ]
     }
   }
 }

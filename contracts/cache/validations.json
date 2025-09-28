@@ -2,6 +2,965 @@
   "version": "3.4",
   "log": [
     {
+      "@pythnetwork/entropy-sdk-solidity/EntropyEvents.sol:EntropyEvents": {
+        "src": "@pythnetwork/entropy-sdk-solidity/EntropyEvents.sol:8",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.17"
+      },
+      "@pythnetwork/entropy-sdk-solidity/EntropyEventsV2.sol:EntropyEventsV2": {
+        "src": "@pythnetwork/entropy-sdk-solidity/EntropyEventsV2.sol:13",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.17"
+      },
+      "@pythnetwork/entropy-sdk-solidity/EntropyStructs.sol:EntropyStructs": {
+        "src": "@pythnetwork/entropy-sdk-solidity/EntropyStructs.sol:10",
+        "version": {
+          "withMetadata": "607388988ee307b03aff1f5490a07dab4c1fdd894f6a3b7b3896d69fe1545e68",
+          "withoutMetadata": "ac0db523ddc3e330f735df7b3b0b24460531c71290a891170e840f8f67d5ff6b",
+          "linkedWithoutMetadata": "ac0db523ddc3e330f735df7b3b0b24460531c71290a891170e840f8f67d5ff6b"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.17"
+      },
+      "@pythnetwork/entropy-sdk-solidity/EntropyStructsV2.sol:EntropyStructsV2": {
+        "src": "@pythnetwork/entropy-sdk-solidity/EntropyStructsV2.sol:5",
+        "version": {
+          "withMetadata": "c72ab78e3feb4bdde01e663f1d0bcb3b596af4908cd2fc2f3fbef48e94ec30f5",
+          "withoutMetadata": "ac0db523ddc3e330f735df7b3b0b24460531c71290a891170e840f8f67d5ff6b",
+          "linkedWithoutMetadata": "ac0db523ddc3e330f735df7b3b0b24460531c71290a891170e840f8f67d5ff6b"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.17"
+      },
+      "@pythnetwork/entropy-sdk-solidity/IEntropyConsumer.sol:IEntropyConsumer": {
+        "src": "@pythnetwork/entropy-sdk-solidity/IEntropyConsumer.sol:4",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "_entropyCallback(uint64,address,bytes32)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.17"
+      },
+      "@pythnetwork/entropy-sdk-solidity/IEntropyV2.sol:IEntropyV2": {
+        "src": "@pythnetwork/entropy-sdk-solidity/IEntropyV2.sol:8",
+        "inherit": [
+          "@pythnetwork/entropy-sdk-solidity/EntropyEventsV2.sol:EntropyEventsV2"
+        ],
+        "libraries": [],
+        "methods": [
+          "requestV2()",
+          "requestV2(uint32)",
+          "requestV2(address,uint32)",
+          "requestV2(address,bytes32,uint32)",
+          "getProviderInfoV2(address)",
+          "getDefaultProvider()",
+          "getRequestV2(address,uint64)",
+          "getFeeV2()",
+          "getFeeV2(uint32)",
+          "getFeeV2(address,uint32)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.17"
+      },
+      "contracts/COPYCATLottery.sol:COPYCATLottery": {
+        "src": "contracts/COPYCATLottery.sol:25",
+        "version": {
+          "withMetadata": "433cf5ad5d5571405ce0a5383df1b26aa53395e35d7b3529674cde400beb984b",
+          "withoutMetadata": "f08bebde8eb7781fef04cd38641bc8242e9dc5109a1366dca302db95f35061f2",
+          "linkedWithoutMetadata": "f08bebde8eb7781fef04cd38641bc8242e9dc5109a1366dca302db95f35061f2"
+        },
+        "inherit": [
+          "@pythnetwork/entropy-sdk-solidity/IEntropyConsumer.sol:IEntropyConsumer"
+        ],
+        "libraries": [
+          "contracts/COPYCATLottery.sol:LotteryErrors"
+        ],
+        "methods": [
+          "(address,address)",
+          "createLottery(uint256,uint256,uint256)",
+          "joinLottery(uint256)",
+          "endLottery(uint256)",
+          "claimPrize(uint256)",
+          "getLottery(uint256)",
+          "getLotteryParticipants(uint256)",
+          "getUserStats(address)",
+          "getContractStats()",
+          "getEntropyFee()",
+          "emergencyWithdraw()",
+          "setEntropyProvider(address)",
+          "()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "COPYCATLottery",
+            "src": "contracts/COPYCATLottery.sol:71"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "entropy",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_contract(IEntropyV2)474",
+              "contract": "COPYCATLottery",
+              "src": "contracts/COPYCATLottery.sol:50"
+            },
+            {
+              "label": "entropyProvider",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_address",
+              "contract": "COPYCATLottery",
+              "src": "contracts/COPYCATLottery.sol:51"
+            },
+            {
+              "label": "owner",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_address",
+              "contract": "COPYCATLottery",
+              "src": "contracts/COPYCATLottery.sol:52"
+            },
+            {
+              "label": "nextLotteryId",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_uint256",
+              "contract": "COPYCATLottery",
+              "src": "contracts/COPYCATLottery.sol:53"
+            },
+            {
+              "label": "totalLotteries",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_uint256",
+              "contract": "COPYCATLottery",
+              "src": "contracts/COPYCATLottery.sol:54"
+            },
+            {
+              "label": "totalPrizesDistributed",
+              "offset": 0,
+              "slot": "5",
+              "type": "t_uint256",
+              "contract": "COPYCATLottery",
+              "src": "contracts/COPYCATLottery.sol:55"
+            },
+            {
+              "label": "lotteries",
+              "offset": 0,
+              "slot": "6",
+              "type": "t_mapping(t_uint256,t_struct(Lottery)567_storage)",
+              "contract": "COPYCATLottery",
+              "src": "contracts/COPYCATLottery.sol:58"
+            },
+            {
+              "label": "hasParticipated",
+              "offset": 0,
+              "slot": "7",
+              "type": "t_mapping(t_uint256,t_mapping(t_address,t_bool))",
+              "contract": "COPYCATLottery",
+              "src": "contracts/COPYCATLottery.sol:59"
+            },
+            {
+              "label": "userWinnings",
+              "offset": 0,
+              "slot": "8",
+              "type": "t_mapping(t_address,t_uint256)",
+              "contract": "COPYCATLottery",
+              "src": "contracts/COPYCATLottery.sol:60"
+            },
+            {
+              "label": "userParticipations",
+              "offset": 0,
+              "slot": "9",
+              "type": "t_mapping(t_address,t_uint256)",
+              "contract": "COPYCATLottery",
+              "src": "contracts/COPYCATLottery.sol:61"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_address)dyn_storage": {
+              "label": "address[]",
+              "numberOfBytes": "32"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_contract(IEntropyV2)474": {
+              "label": "contract IEntropyV2",
+              "numberOfBytes": "20"
+            },
+            "t_mapping(t_address,t_bool)": {
+              "label": "mapping(address => bool)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_uint256,t_mapping(t_address,t_bool))": {
+              "label": "mapping(uint256 => mapping(address => bool))",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_uint256,t_struct(Lottery)567_storage)": {
+              "label": "mapping(uint256 => struct COPYCATLottery.Lottery)",
+              "numberOfBytes": "32"
+            },
+            "t_struct(Lottery)567_storage": {
+              "label": "struct COPYCATLottery.Lottery",
+              "members": [
+                {
+                  "label": "lotteryId",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "entryFee",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "1"
+                },
+                {
+                  "label": "maxParticipants",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "2"
+                },
+                {
+                  "label": "startTime",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "3"
+                },
+                {
+                  "label": "endTime",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "4"
+                },
+                {
+                  "label": "prizePool",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "5"
+                },
+                {
+                  "label": "participants",
+                  "type": "t_array(t_address)dyn_storage",
+                  "offset": 0,
+                  "slot": "6"
+                },
+                {
+                  "label": "winner",
+                  "type": "t_address",
+                  "offset": 0,
+                  "slot": "7"
+                },
+                {
+                  "label": "isActive",
+                  "type": "t_bool",
+                  "offset": 20,
+                  "slot": "7"
+                },
+                {
+                  "label": "isEnded",
+                  "type": "t_bool",
+                  "offset": 21,
+                  "slot": "7"
+                },
+                {
+                  "label": "sequenceNumber",
+                  "type": "t_uint64",
+                  "offset": 22,
+                  "slot": "7"
+                },
+                {
+                  "label": "randomNumberReceived",
+                  "type": "t_bool",
+                  "offset": 30,
+                  "slot": "7"
+                }
+              ],
+              "numberOfBytes": "256"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            },
+            "t_uint64": {
+              "label": "uint64",
+              "numberOfBytes": "8"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.17"
+      },
+      "contracts/COPYCATLottery.sol:LotteryErrors": {
+        "src": "contracts/COPYCATLottery.sol:10",
+        "version": {
+          "withMetadata": "a96751928a105ae3614a788df9b0aae67794ed052a718178a62413c4112a686c",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.17"
+      },
+      "contracts/ProfitableSaucerSwap.sol:IERC20": {
+        "src": "contracts/ProfitableSaucerSwap.sol:5",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "transfer(address,uint256)",
+          "transferFrom(address,address,uint256)",
+          "balanceOf(address)",
+          "approve(address,uint256)",
+          "allowance(address,address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.17"
+      },
+      "contracts/ProfitableSaucerSwap.sol:IQuoterV2": {
+        "src": "contracts/ProfitableSaucerSwap.sol:39",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "quoteExactInput(bytes,uint256)",
+          "quoteExactOutput(bytes,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.17"
+      },
+      "contracts/ProfitableSaucerSwap.sol:ISwapLottery": {
+        "src": "contracts/ProfitableSaucerSwap.sol:60",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "enterUser(address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.17"
+      },
+      "contracts/ProfitableSaucerSwap.sol:ISwapRouter": {
+        "src": "contracts/ProfitableSaucerSwap.sol:14",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "exactInput((bytes,address,uint256,uint256,uint256))",
+          "exactOutput((bytes,address,uint256,uint256,uint256))",
+          "multicall(bytes[])",
+          "refundETH()",
+          "unwrapWETH9(uint256,address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.17"
+      },
+      "contracts/ProfitableSaucerSwap.sol:ProfitableSaucerSwap": {
+        "src": "contracts/ProfitableSaucerSwap.sol:68",
+        "version": {
+          "withMetadata": "c5e2ed436be7795f77b59305b85217e4addffa96f6320eeda580fe6d703fcf5b",
+          "withoutMetadata": "092b5388cf890d5695f3a4db526a0c54c84d293138295f0a01339765fad803ee",
+          "linkedWithoutMetadata": "092b5388cf890d5695f3a4db526a0c54c84d293138295f0a01339765fad803ee"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "(address,address,address,address)",
+          "setLotteryContract(address)",
+          "setLotteryPool(address)",
+          "swapExactHBARForTokens(address,uint24,uint256,uint256)",
+          "swapExactTokensForHBAR(address,uint24,uint256,uint256,uint256)",
+          "swapExactTokensForTokens(address,address,uint24,uint256,uint256,uint256)",
+          "getQuoteExactInput(bytes,uint256)",
+          "getUserSwapHistoryLength(address)",
+          "getUserSwapRecord(address,uint256)",
+          "getUserStats(address)",
+          "emergencyWithdraw(address,uint256)",
+          "transferOwnership(address)",
+          "getTokenBalance(address)",
+          "getContractInfo()",
+          "()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "ProfitableSaucerSwap",
+            "src": "contracts/ProfitableSaucerSwap.sol:142"
+          },
+          {
+            "kind": "state-variable-immutable",
+            "name": "swapRouter",
+            "src": "contracts/ProfitableSaucerSwap.sol:69"
+          },
+          {
+            "kind": "state-variable-immutable",
+            "name": "quoter",
+            "src": "contracts/ProfitableSaucerSwap.sol:70"
+          },
+          {
+            "kind": "state-variable-immutable",
+            "name": "WHBAR",
+            "src": "contracts/ProfitableSaucerSwap.sol:74"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "lotteryContract",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_contract(ISwapLottery)1609",
+              "contract": "ProfitableSaucerSwap",
+              "src": "contracts/ProfitableSaucerSwap.sol:71"
+            },
+            {
+              "label": "owner",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_address",
+              "contract": "ProfitableSaucerSwap",
+              "src": "contracts/ProfitableSaucerSwap.sol:77"
+            },
+            {
+              "label": "lotteryPool",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_address",
+              "contract": "ProfitableSaucerSwap",
+              "src": "contracts/ProfitableSaucerSwap.sol:80"
+            },
+            {
+              "label": "locked",
+              "offset": 20,
+              "slot": "2",
+              "type": "t_bool",
+              "contract": "ProfitableSaucerSwap",
+              "src": "contracts/ProfitableSaucerSwap.sol:83"
+            },
+            {
+              "label": "userSwapHistory",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_mapping(t_address,t_array(t_struct(SwapRecord)1640_storage)dyn_storage)",
+              "contract": "ProfitableSaucerSwap",
+              "src": "contracts/ProfitableSaucerSwap.sol:95"
+            },
+            {
+              "label": "userTotalProfits",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_mapping(t_address,t_uint256)",
+              "contract": "ProfitableSaucerSwap",
+              "src": "contracts/ProfitableSaucerSwap.sol:96"
+            },
+            {
+              "label": "userLotteryContributions",
+              "offset": 0,
+              "slot": "5",
+              "type": "t_mapping(t_address,t_uint256)",
+              "contract": "ProfitableSaucerSwap",
+              "src": "contracts/ProfitableSaucerSwap.sol:97"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_struct(SwapRecord)1640_storage)dyn_storage": {
+              "label": "struct ProfitableSaucerSwap.SwapRecord[]",
+              "numberOfBytes": "32"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_contract(ISwapLottery)1609": {
+              "label": "contract ISwapLottery",
+              "numberOfBytes": "20"
+            },
+            "t_mapping(t_address,t_array(t_struct(SwapRecord)1640_storage)dyn_storage)": {
+              "label": "mapping(address => struct ProfitableSaucerSwap.SwapRecord[])",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)",
+              "numberOfBytes": "32"
+            },
+            "t_struct(SwapRecord)1640_storage": {
+              "label": "struct ProfitableSaucerSwap.SwapRecord",
+              "members": [
+                {
+                  "label": "tokenIn",
+                  "type": "t_address",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "tokenOut",
+                  "type": "t_address",
+                  "offset": 0,
+                  "slot": "1"
+                },
+                {
+                  "label": "amountIn",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "2"
+                },
+                {
+                  "label": "amountOut",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "3"
+                },
+                {
+                  "label": "timestamp",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "4"
+                },
+                {
+                  "label": "isRoundTripStart",
+                  "type": "t_bool",
+                  "offset": 0,
+                  "slot": "5"
+                }
+              ],
+              "numberOfBytes": "192"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.17"
+      },
+      "contracts/SwapLottery.sol:SwapLottery": {
+        "src": "contracts/SwapLottery.sol:28",
+        "version": {
+          "withMetadata": "00b47182d5b62fa55dfbfc0432b7f2f64e68745808e5f6d1944162abb419fec9",
+          "withoutMetadata": "2c975215b13b71411aa6c58fef416bc6b952cce03ee26a62e4cef595dbedb998",
+          "linkedWithoutMetadata": "2c975215b13b71411aa6c58fef416bc6b952cce03ee26a62e4cef595dbedb998"
+        },
+        "inherit": [
+          "@pythnetwork/entropy-sdk-solidity/IEntropyConsumer.sol:IEntropyConsumer"
+        ],
+        "libraries": [
+          "contracts/SwapLottery.sol:SwapLotteryErrors"
+        ],
+        "methods": [
+          "(address,address,uint256,uint256)",
+          "setSwapContract(address)",
+          "enterUser(address,uint256)",
+          "endCurrentLottery()",
+          "selectWinner(uint256,uint256)",
+          "claimPrize(uint256)",
+          "addToPrizePool()",
+          "getLottery(uint256)",
+          "getLotteryParticipants(uint256)",
+          "getUserTickets(uint256,address)",
+          "getUserStats(address)",
+          "getContractStats()",
+          "getEntropyFee()",
+          "updateLotterySettings(uint256,uint256)",
+          "setEntropyProvider(address)",
+          "emergencyWithdraw()",
+          "transferOwnership(address)",
+          "()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "SwapLottery",
+            "src": "contracts/SwapLottery.sol:75"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "entropy",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_contract(IEntropyV2)474",
+              "contract": "SwapLottery",
+              "src": "contracts/SwapLottery.sol:57"
+            },
+            {
+              "label": "entropyProvider",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_address",
+              "contract": "SwapLottery",
+              "src": "contracts/SwapLottery.sol:58"
+            },
+            {
+              "label": "owner",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_address",
+              "contract": "SwapLottery",
+              "src": "contracts/SwapLottery.sol:59"
+            },
+            {
+              "label": "swapContract",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_address",
+              "contract": "SwapLottery",
+              "src": "contracts/SwapLottery.sol:60"
+            },
+            {
+              "label": "currentLotteryId",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_uint256",
+              "contract": "SwapLottery",
+              "src": "contracts/SwapLottery.sol:62"
+            },
+            {
+              "label": "lotteries",
+              "offset": 0,
+              "slot": "5",
+              "type": "t_mapping(t_uint256,t_struct(Lottery)2905_storage)",
+              "contract": "SwapLottery",
+              "src": "contracts/SwapLottery.sol:63"
+            },
+            {
+              "label": "lotteryDuration",
+              "offset": 0,
+              "slot": "6",
+              "type": "t_uint256",
+              "contract": "SwapLottery",
+              "src": "contracts/SwapLottery.sol:66"
+            },
+            {
+              "label": "minParticipants",
+              "offset": 0,
+              "slot": "7",
+              "type": "t_uint256",
+              "contract": "SwapLottery",
+              "src": "contracts/SwapLottery.sol:67"
+            },
+            {
+              "label": "totalLotteries",
+              "offset": 0,
+              "slot": "8",
+              "type": "t_uint256",
+              "contract": "SwapLottery",
+              "src": "contracts/SwapLottery.sol:70"
+            },
+            {
+              "label": "totalPrizesDistributed",
+              "offset": 0,
+              "slot": "9",
+              "type": "t_uint256",
+              "contract": "SwapLottery",
+              "src": "contracts/SwapLottery.sol:71"
+            },
+            {
+              "label": "userTotalWinnings",
+              "offset": 0,
+              "slot": "10",
+              "type": "t_mapping(t_address,t_uint256)",
+              "contract": "SwapLottery",
+              "src": "contracts/SwapLottery.sol:72"
+            },
+            {
+              "label": "userParticipationCount",
+              "offset": 0,
+              "slot": "11",
+              "type": "t_mapping(t_address,t_uint256)",
+              "contract": "SwapLottery",
+              "src": "contracts/SwapLottery.sol:73"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_address)dyn_storage": {
+              "label": "address[]",
+              "numberOfBytes": "32"
+            },
+            "t_array(t_uint256)dyn_storage": {
+              "label": "uint256[]",
+              "numberOfBytes": "32"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_contract(IEntropyV2)474": {
+              "label": "contract IEntropyV2",
+              "numberOfBytes": "20"
+            },
+            "t_mapping(t_address,t_array(t_uint256)dyn_storage)": {
+              "label": "mapping(address => uint256[])",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_bool)": {
+              "label": "mapping(address => bool)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_uint256,t_struct(Lottery)2905_storage)": {
+              "label": "mapping(uint256 => struct SwapLottery.Lottery)",
+              "numberOfBytes": "32"
+            },
+            "t_struct(Lottery)2905_storage": {
+              "label": "struct SwapLottery.Lottery",
+              "members": [
+                {
+                  "label": "lotteryId",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "startTime",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "1"
+                },
+                {
+                  "label": "endTime",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "2"
+                },
+                {
+                  "label": "prizePool",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "3"
+                },
+                {
+                  "label": "participants",
+                  "type": "t_array(t_address)dyn_storage",
+                  "offset": 0,
+                  "slot": "4"
+                },
+                {
+                  "label": "userTickets",
+                  "type": "t_mapping(t_address,t_array(t_uint256)dyn_storage)",
+                  "offset": 0,
+                  "slot": "5"
+                },
+                {
+                  "label": "hasParticipated",
+                  "type": "t_mapping(t_address,t_bool)",
+                  "offset": 0,
+                  "slot": "6"
+                },
+                {
+                  "label": "winner",
+                  "type": "t_address",
+                  "offset": 0,
+                  "slot": "7"
+                },
+                {
+                  "label": "winningNumber",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "8"
+                },
+                {
+                  "label": "isActive",
+                  "type": "t_bool",
+                  "offset": 0,
+                  "slot": "9"
+                },
+                {
+                  "label": "isEnded",
+                  "type": "t_bool",
+                  "offset": 1,
+                  "slot": "9"
+                },
+                {
+                  "label": "sequenceNumber",
+                  "type": "t_uint64",
+                  "offset": 2,
+                  "slot": "9"
+                },
+                {
+                  "label": "randomNumberReceived",
+                  "type": "t_bool",
+                  "offset": 10,
+                  "slot": "9"
+                },
+                {
+                  "label": "prizeClaimed",
+                  "type": "t_bool",
+                  "offset": 11,
+                  "slot": "9"
+                }
+              ],
+              "numberOfBytes": "320"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            },
+            "t_uint64": {
+              "label": "uint64",
+              "numberOfBytes": "8"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.17"
+      },
+      "contracts/SwapLottery.sol:SwapLotteryErrors": {
+        "src": "contracts/SwapLottery.sol:8",
+        "version": {
+          "withMetadata": "624246f00dabab02d18181066898dad65070e798a77a520e14e6f3b60d44a531",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.17"
+      }
+    },
+    {
       "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:OwnableUpgradeable": {
         "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:21",
         "inherit": [

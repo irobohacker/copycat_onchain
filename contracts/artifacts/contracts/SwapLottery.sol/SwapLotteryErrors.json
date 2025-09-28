@@ -1,0 +1,66 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "SwapLotteryErrors",
+  "sourceName": "contracts/SwapLottery.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "AlreadyParticipated",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InsufficientFunds",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidLotteryDuration",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidWinnerNumber",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "LotteryAlreadyEnded",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "LotteryInProgress",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "LotteryNotActive",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NoParticipants",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NotAuthorizedContract",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NotOwner",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "RandomNumberNotReady",
+      "type": "error"
+    }
+  ],
+  "bytecode": "0x60566037600b82828239805160001a607314602a57634e487b7160e01b600052600060045260246000fd5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220d891738105e6f1ed28697083c7b58cb84764f8a543838b0d3bfe6d4f19ebc71764736f6c63430008110033",
+  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220d891738105e6f1ed28697083c7b58cb84764f8a543838b0d3bfe6d4f19ebc71764736f6c63430008110033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

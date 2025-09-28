@@ -1,0 +1,19 @@
+{
+  "network": "testnet",
+  "chainId": 296,
+  "timestamp": "2025-09-28T00:42:18.157Z",
+  "deployer": "0xd73d9688EEb6d6C634Eb9B781E990CdDA44Cb59B",
+  "contracts": {
+    "ProfitableSaucerSwap": "0x1764C1bD0E301b819728Ef4A992e4dFE8458c2c2",
+    "SwapLottery": "0x1057512b68E855808aD6Ec81850A89b53a15926e"
+  },
+  "configuration": {
+    "swapRouter": "0x0000000000000000000000000000000000159398",
+    "quoterV2": "0x00000000000000000000000000000000001535b2",
+    "whbar": "0x0000000000000000000000000000000000003ad1",
+    "entropy": "0xD458261E832415CFd3BAE5E416FdF3230ce6F134",
+    "entropyProvider": "0x6CC14824Ea2918f5De5C2f75A9Da968ad4BD6344",
+    "lotteryDuration": 3600,
+    "minParticipants": 2
+  }
+}
