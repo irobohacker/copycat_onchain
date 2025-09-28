@@ -5,8 +5,22 @@ A comprehensive decentralized application combining AI-powered trading strategie
 ## 🚀 **Live Demo**
 
 **Frontend**: [http://localhost:3000](http://localhost:3000)  
-**Contract**: [0x6d721f50535259e039c811e934e3d51b41caf3774d451a9ec542c5952985c15b](https://eth-sepolia.blockscout.com/tx/0x6d721f50535259e039c811e934e3d51b41caf3774d451a9ec542c5952985c15b)  
+**Contract**: [0x6d721f50535259e039c811e934e3d51b41caf3774d451a9ec542c5952985c15b](https://eth-sepolia.blockscout.com/tx/0x6d721f50535259e039c811e934e3d51b41caf3774d451a9ec542c5952985c15b)
+https://eth-sepolia.blockscout.com/tx/0x27ff740d492a62ee9d3bd4a519bc7c0f161c7fb9c5359d5abb86a536ce18365c  
 **Network**: Ethereum Sepolia Testnet
+
+### **Hedera Contracts**
+
+- **[0.0.6917343](https://hashscan.io/testnet/contract/0.0.6917343/calls)** - Lottery Contract
+- **[0.0.6917342](https://hashscan.io/testnet/contract/0.0.6917342/calls)** - Trading Strategy Contract
+
+### **Flow Contracts**
+
+- **Counter**: [0x990440cb0ee9e385](https://flow-view-testnet.blockscout.com/contract/0x990440cb0ee9e385)
+- **PythPriceFeed**: [0x990440cb0ee9e385](https://flow-view-testnet.blockscout.com/contract/0x990440cb0ee9e385)
+- **TestablePythIntegration**: [0x990440cb0ee9e385](https://flow-view-testnet.blockscout.com/contract/0x990440cb0ee9e385)
+- **TestablePythTrading**: [0x990440cb0ee9e385](https://flow-view-testnet.blockscout.com/contract/0x990440cb0ee9e385)
+
 
 ## ✨ **Features**
 
