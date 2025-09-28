@@ -2,3 +2,4 @@
 emulator-account.pkey
 imports
 .env
+flow-testnet.pkey

@@ -6,46 +6,49 @@
 				"testing": "0000000000000007"
 			}
 		},
+		"FlowToken": {
+			"source": "",
+			"aliases": {
+				"emulator": "0ae53cb6e3f42a79",
+				"mainnet": "1654653399040a61",
+				"testnet": "7e60df042a9c0868"
+			}
+		},
+		"FungibleToken": {
+			"source": "",
+			"aliases": {
+				"emulator": "ee82856bf20e2aa6",
+				"mainnet": "f233dcee88fe0abe",
+				"testnet": "9a0766d93b6608b7"
+			}
+		},
+		"Pyth": {
+			"source": "",
+			"aliases": {
+				"emulator": "2880ab155794e717",
+				"mainnet": "2880ab155794e717",
+				"testnet": "2880ab155794e717"
+			}
+		},
 		"PythPriceFeed": {
 			"source": "cadence/contracts/PythPriceFeed.cdc",
 			"aliases": {
-				"testing": "0000000000000007",
-				"emulator": "f8d6e0586b0a20c7"
+				"emulator": "f8d6e0586b0a20c7",
+				"testing": "0000000000000007"
 			}
 		},
 		"TestablePythIntegration": {
 			"source": "cadence/contracts/TestablePythIntegration.cdc",
 			"aliases": {
-				"testing": "0000000000000007",
-				"emulator": "f8d6e0586b0a20c7"
+				"emulator": "f8d6e0586b0a20c7",
+				"testing": "0000000000000007"
 			}
 		},
 		"TestablePythTrading": {
 			"source": "cadence/contracts/TestablePythTrading.cdc",
 			"aliases": {
-				"testing": "0000000000000007",
-				"emulator": "f8d6e0586b0a20c7"
-			}
-		},
-		"FlowToken": {
-			"aliases": {
-				"emulator": "0ae53cb6e3f42a79",
-				"testnet": "7e60df042a9c0868",
-				"mainnet": "1654653399040a61"
-			}
-		},
-		"FungibleToken": {
-			"aliases": {
-				"emulator": "ee82856bf20e2aa6",
-				"testnet": "9a0766d93b6608b7",
-				"mainnet": "f233dcee88fe0abe"
-			}
-		},
-		"Pyth": {
-			"aliases": {
-				"emulator": "2880ab155794e717",
-				"testnet": "2880ab155794e717",
-				"mainnet": "2880ab155794e717"
+				"emulator": "f8d6e0586b0a20c7",
+				"testing": "0000000000000007"
 			}
 		}
 	},
@@ -62,11 +65,30 @@
 				"type": "file",
 				"location": "emulator-account.pkey"
 			}
+		},
+		"flow-testnet": {
+			"address": "990440cb0ee9e385",
+			"key": {
+				"type": "file",
+				"location": "flow-testnet.pkey"
+			}
 		}
 	},
 	"deployments": {
 		"emulator": {
-			"emulator-account": ["TestablePythIntegration", "TestablePythTrading"]
+			"emulator-account": [
+				"TestablePythIntegration",
+				"TestablePythTrading",
+				"PythPriceFeed"
+			]
+		},
+		"testnet": {
+			"flow-testnet": [
+				"Counter",
+				"PythPriceFeed",
+				"TestablePythIntegration",
+				"TestablePythTrading"
+			]
 		}
 	}
 }
