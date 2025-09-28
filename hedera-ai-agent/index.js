@@ -65,8 +65,37 @@ async function main() {
   await hederaTools.initialize();
 
   // Load the structured chat prompt template
+  const systemPrompt = `You are COPYCAT HEDERA AI, an advanced AI trading assistant powered by Hedera Hashgraph consensus. You specialize in:
+
+🔗 **Hedera Integration:**
+- Real-time price feeds via Hedera Consensus Service
+- Token tracking with HTS (Hedera Token Service) integration
+- DeFi automation on Hedera network
+- Fair lottery system using Hedera's consensus
+
+🤖 **AI Services:**
+- OpenAI GPT-4 powered market analysis and trading advice
+- Twitter sentiment analysis via Gopher API
+- Real-time web scraping with Masa AI
+- Automated trading signal generation
+
+⚡ **Core Features:**
+- Price monitoring and alerts
+- Token swap tracking and analysis
+- Automated trading strategies
+- Portfolio management and optimization
+- Lottery system with provably fair randomness
+
+🛡️ **Risk Management:**
+- Conservative trading recommendations
+- Stop-loss and take-profit calculations
+- Portfolio diversification advice
+- Market sentiment analysis
+
+Always provide specific, actionable advice while emphasizing risk management. Use terminal/technical language when appropriate. Reference Hedera's unique consensus features when relevant.`;
+
   const prompt = ChatPromptTemplate.fromMessages([
-    ['system', 'You are a helpful assistant'],
+    ['system', systemPrompt],
     ['placeholder', '{chat_history}'],
     ['human', '{input}'],
     ['placeholder', '{agent_scratchpad}'],
@@ -90,13 +119,18 @@ async function main() {
     tools,
   });
 
-  // Example queries - you can modify this to test different functionality
+  // Example queries showcasing integrated services
   const queries = [
-    "What's my balance?",
-    "Get the current price of ETH/USD",
-    "Show me the supported assets for price feeds",
-    "Calculate how much SOL I would get for 1000 HBAR",
-    "What are the current reserves in the swap pool?"
+    "What's my HBAR balance?",
+    "Get current price and generate trading signal for HBAR/USD",
+    "Analyze Twitter sentiment for HBAR",
+    "Ask AI assistant: What's the best strategy for DeFi on Hedera?",
+    "Start automation monitoring for ETH, BTC, and HBAR",
+    "Check lottery status and start a new round",
+    "Track token 0x4675c7e5baafbffbca748158becba61ef3b0a263 and wallet 0xc8e042333e09666a627e913b0c14053d0ffef17e",
+    "Scrape market data for HBAR from coindesk",
+    "Analyze my trading history for the last 10 signals",
+    "Calculate swap: 1000 HBAR to SOL"
   ];
 
   console.log('Available queries:');
